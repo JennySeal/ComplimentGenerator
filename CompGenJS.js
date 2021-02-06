@@ -1,7 +1,7 @@
-const introText = ['You are', 'You look', 'I think you are', 'Wow! You are', 'Can I say you look']
+const introText = ['You are', 'You look', 'I think you are', 'Wow! You are', 'Can I say you look', 'You are always so']
 const intensifier = ['mighty', 'so', 'very', 'really', 'extremely', 'truly', 'really very', 'absolutely']
 const adjective = ['beautiful', 'glamourous', 'attractive', 'intelligent', 'amazing', 'fabulous',
-'out of this word', 'glorious', 'awesome', 'delightful', 'pleasing']
+'out of this world', 'glorious', 'awesome', 'delightful', 'pleasing']
 
 const randomiser = (arrayParam) => {
     index = Math.random(arrayParam)*arrayParam.length;
@@ -15,10 +15,11 @@ let intro = randomiser(introText)
 let intense = randomiser(intensifier)
 let descriptor = randomiser(adjective)
 let compliment = `${intro} ${intense} ${descriptor}!`
-return compliment
+writeCompliment(compliment)
 }
 
-onsubmit: complimentGenerator(introText, intensifier, adjective))
-
+const writeCompliment = (compliment) => {
 document.getElementById('compliment').innerHTML = compliment;
 document.getElementById('compliment').style.display = "block";
+}
+

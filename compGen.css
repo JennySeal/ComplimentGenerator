@@ -4,8 +4,7 @@ body {background-color: lightslategray;
     color: gold ;
     height: 100%;
     text-align: center;
-    font-size: 18px;
-    text-transform:capitalize;}
+    font-size: 18px;}
 h1      {font-size: 3em;
         margin-top: 5%;
         font-family: "Cabin Sketch";
