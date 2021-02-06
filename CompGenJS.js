@@ -4,8 +4,7 @@ const adjective = ['beautiful', 'glamourous', 'attractive', 'intelligent', 'amaz
 'out of this world', 'glorious', 'awesome', 'delightful', 'pleasing', 'impressive']
 
 const randomiser = (arrayParam) => {
-    index = Math.random(arrayParam)*arrayParam.length;
-    index = Math.floor(index);
+    let index = Math.floor(Math.random(arrayParam)*arrayParam.length);
     let compPart = arrayParam[index]
     return compPart;
 }
@@ -19,7 +18,7 @@ writeCompliment(compliment)
 }
 
 const writeCompliment = (compliment) => {
-document.getElementById('compliment').innerHTML = compliment;
+document.getElementById('compliment').textContent = compliment;
 document.getElementById('compliment').style.display = "block";
 }
 
