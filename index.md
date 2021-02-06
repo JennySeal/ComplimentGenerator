@@ -2,7 +2,7 @@
 
 ## Press the button and receive a compliment. 
 
-** Using technologies: 
+**Using technologies:** 
 * Javascript
 * HTML
 * CSS
